@@ -1,8 +1,8 @@
-var gifCats = ["Apex Legends", "Sly Cooper", "German Shepard", "Telltales", "The Office"];
+var gifCats = ["Apex Legends", "Sly Cooper", "German Shepard Dog", "Telltales", "The Office"];
 
 
 $(document).ready(function(){
-function displayMovieInfo() {
+function displayGifInfo() {
   $("button").on("click", function () {
 
     var gifs = $(this).attr("data-person")
@@ -67,7 +67,7 @@ $("#add-gif").on("click", function (event) {
 });
 
 // Adding click event listeners to all elements with a class of "gif"
-$(document).on("click", ".gif", displayMovieInfo);
+$(document).on("click", ".gif", displayGifInfo);
 
 // Calling the renderButtons function to display the intial buttons
 renderButtons();
