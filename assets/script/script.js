@@ -7,7 +7,7 @@ function displayGifInfo() {
 
     var gifs = $(this).attr("data-person")
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gifs + "&api_key=Do0obuG0reFss2eMQBowwUGByV399wqw";
-    var stillURL = "https://api.giphy.com/v1/gifs/search?q=" + gifs + "&api_key=Do0obuG0reFss2eMQBowwUGByV399wqw"
+    
 
     $("#gifs-appear-here").empty();
     $.ajax({
