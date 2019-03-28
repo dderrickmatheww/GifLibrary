@@ -5,3 +5,18 @@
   input {
     margin: 10px;
   }
+
+  #title {
+    background-image: url("../../assets/images/background.gif");
+    background-repeat: repeat-x;
+    border-bottom: 3px solid orange;
+    font-family: 'Baloo Chettan', cursive;
+    -webkit-text-stroke: 2px black;
+    color: chartreuse; 
+  }
+
+  #addgiftext {
+    font-family: 'Baloo Chettan', cursive;
+    -webkit-text-stroke: 0.5px black;
+    color: blue; 
+  }

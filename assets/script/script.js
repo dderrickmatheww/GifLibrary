@@ -36,16 +36,16 @@ $("button").on("click", function() {
   });
 }
 
-// This function handles events where the add movie button is clicked
+// This function handles events where the add gif button is clicked
 $("#add-gif").on("click", function(event) {
     event.preventDefault();
     // This line of code will grab the input from the textbox
     var gif = $("#gif-input").val().trim();
 
-    // The movie from the textbox is then added to our array
+    // The gif from the textbox is then added to our array
     gifCats.push(gif);
 
-    // Calling renderButtons which handles the processing of our movie array
+    // Calling renderButtons which handles the processing of gifcats array
     renderButtons();
   });
 
@@ -65,7 +65,7 @@ function renderButtons() {
         
       // Then dynamicaly generates buttons for each movie in the array
       // This code $("<button>") is all jQuery needs to create the beginning and end tag. (<button></button>)
-      var a = $("<button>");
+      var a = $("<button class= 'btn btn-outline-primary'>");
       // Adds a class of movie to our button
       a.addClass("gif");
       // Added a data-attribute
